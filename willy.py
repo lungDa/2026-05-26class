@@ -12,7 +12,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read(worksheet="Tasks", ttl="0")
 
-todo_df = df[df["owner"] == "python"]
+todo_df = df[df["owner"] == "java"]
 
 st.write("---") 
 
